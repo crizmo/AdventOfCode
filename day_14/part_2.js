@@ -4,6 +4,8 @@ const inputFilePath = './day_14/input.txt';
 const input = fs.readFileSync(inputFilePath, 'utf8');
 const totalCycles = 1e9;
 
+console.time('part 2');
+
 const tilt = (grid, row, col) => {
     const numRows = grid.length;
     const numCols = grid[0].length;
@@ -65,3 +67,4 @@ const solve = (input) => {
 };
 
 console.log(solve(input));
+console.timeEnd('part 2');

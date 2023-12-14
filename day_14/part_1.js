@@ -3,6 +3,8 @@ const path = require('path');
 
 const input = fs.readFileSync(path.join(__dirname, 'input.txt'), 'utf8')
 
+console.time('part 1');
+
 let rocks = 'O';
 let empty = '.';
 
@@ -105,3 +107,5 @@ function calculateLoad(input){
 
 let totalLoad = calculateLoad(movedInput);
 console.log(totalLoad);
+
+console.timeEnd('part 1');
